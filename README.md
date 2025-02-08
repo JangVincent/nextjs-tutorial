@@ -10,3 +10,10 @@ For more information, see the [course curriculum](https://nextjs.org/learn) on t
 
 - add prettier and format commend in package.json
 - Followed Next.js tutorial course until [HERE](https://nextjs.org/learn/dashboard-app/setting-up-your-database)
+
+### 2025 02 08
+
+- Add Suspense and Lazy loading for the components
+- Add `bcryptjs` instead of `bcrypt` for the password hashing
+- Add docker compose for the database
+- Add loading skeleton for the dashboard (page.tsx and loading.tsx in `(overview)` folder in `dashboard` dir)
