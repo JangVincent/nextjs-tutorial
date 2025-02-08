@@ -9,3 +9,4 @@ For more information, see the [course curriculum](https://nextjs.org/learn) on t
 ### first commit
 
 - add prettier and format commend in package.json
+- Followed Next.js tutorial course until [HERE](https://nextjs.org/learn/dashboard-app/setting-up-your-database)
