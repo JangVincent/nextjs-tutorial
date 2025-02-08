@@ -1,10 +1,16 @@
-import bcrypt from 'bcrypt'
 import postgres from 'postgres'
-import { invoices, customers, revenue, users } from '../lib/placeholder-data'
+import { customers, invoices, revenue, users } from '../lib/placeholder-data'
 
-const sql = postgres(process.env.POSTGRES_URL!, { ssl: 'require' })
+const sql = postgres(process.env.POSTGRES_URL!, {
+  port: 5432,
+  host: 'localhost',
+  database: 'tutorial',
+  user: 'postgres',
+  password: 'postgres',
+})
 
 async function seedUsers() {
+  const bcrypt = require('bcryptjs')
   await sql`CREATE EXTENSION IF NOT EXISTS "uuid-ossp"`
   await sql`
     CREATE TABLE IF NOT EXISTS users (
